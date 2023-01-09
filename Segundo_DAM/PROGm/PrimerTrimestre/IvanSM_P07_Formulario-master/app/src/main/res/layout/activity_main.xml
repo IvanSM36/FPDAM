@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#216EAC"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D8D8D8"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Tienda Online de Patinaje"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Tareas"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editTextTarea"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:text="Departamento"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGDepartamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+
+            <RadioButton
+                android:id="@+id/radioBtnDiseño"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginTop="3dp"
+                android:text="Dpto. Diseño"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/radioBtnProg"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginTop="3dp"
+                android:text="Dpto. Proramación"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/radioBtnMark"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:layout_marginTop="3dp"
+                android:text="Dpto. Marketing"
+                android:textSize="12dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewEncargada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Persona Encargada"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editTextEncargada"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textViewExterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Externo"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:id="@+id/checkExterno"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewFechaIni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Fecha de inicio"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewDiaIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dia"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinDiaInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />               />
+
+            <TextView
+                android:id="@+id/txtViewMesIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinMesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtViewAnioIni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Año"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinAnioInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Fecha de finalizacion"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtViewDiaFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dia"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinDiaFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />               />
+
+            <TextView
+                android:id="@+id/txtViewMesFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mes"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinMesFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txtViewAnioFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Año"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinAnioFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtViewEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Estado de tarea"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtnRojo"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="3dp"
+                android:text="Rojo"
+                android:textSize="12dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioBtonAmarillo"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="3dp"
+                android:text="Amarillo"
+                android:textSize="12dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioBtnVerde"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="3dp"
+                android:text="Verde"
+
+                android:textSize="12dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioBtnAzul"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="3dp"
+                android:text="Azul"
+                android:textSize="12dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkCopia"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Enviame una copia de mis respuestas"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnRemitir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="comprobar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Remitir" />
+
+        <TextView
+            android:id="@+id/txtViewPatrocinado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="10dp"
+            android:text="Patrocinado por formularios web de Smartphone" />
+
+        <TextView
+            android:id="@+id/txtViewPatrocinado2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="10dp"
+            android:text="Politica de privacidad | Denunciar abuso" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

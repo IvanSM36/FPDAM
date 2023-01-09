@@ -1,0 +1,30 @@
+Valor: Heladas fuertes (hasta -15ºC)
+Valor: Acer monspessulanum
+Valor: Arce de Montpellier, Arce menor
+Valor: Caducifolio
+Valor: De 6 a 10 metro
+Valor: Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante
+Valor: Haz verde brillante, envés verde blanquecino
+Valor: Heladas fuertes (hasta -15ºC)
+Valor: Olea europea
+Valor: Olivo
+Valor: Perenne
+Valor: De 8 a 15 metros
+Valor: Copa irregular. Tronco principal irregular con bifurcaciones.
+Valor: Ramaje tortuoso
+Valor: Haz verde oscuro, envés verde plateado
+Valor: Heladas medias (hasta -10ºC)
+Valor: Platanus orientalis
+Valor: Platano
+Valor: Caducifolio
+Valor: De 20 a 25 metros
+Valor: Copa ovoidal. Tronco principal recto. Ramaje expandido
+Valor: Haz verde medio, enves verde claro
+Valor: Heladas fuertes (hasta -20ºC)
+Valor: Quercus ilex
+Valor: Encina
+Valor: Perenne
+Valor: En torno a 25 metros
+Valor: Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso
+Valor: Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado 
+Valor: Heladas fuertes (hasta -15ºC)

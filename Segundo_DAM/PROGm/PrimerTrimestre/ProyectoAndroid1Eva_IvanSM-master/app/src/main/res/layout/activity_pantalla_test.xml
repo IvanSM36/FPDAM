@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaTest">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imgPortada"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/lechuza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+
+    <ImageView
+        android:id="@+id/imgLogo3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/logo" />
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:id="@+id/txt1Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Cual fue la primera escoba que uso Harry Potter en su primer partido de Quidditch?	"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:id="@+id/view02"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/rgPregunta1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnBarredoras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Barredoras"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnSaeta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saeta de fuego"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnNimbus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nimbus 2000"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnCometa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cometa"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:onClick="pregunta1atras"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btnSiguiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:onClick="pregunta1siguiente"
+                    android:text="siguiente"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt2Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Cual es el hechizo para abrir cerraduras?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:id="@+id/view02_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/rgPregunta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnAlohomora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alohomora"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnAbrete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abretesesamo"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnYo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yoo!!"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnAbre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abree!!"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:onClick="pregunta2atras"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btnSiguiente2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:onClick="pregunta2siguiente"
+                    android:text="siguiente"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt3Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="3º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Cual es el hechizo para levitar objetos?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:id="@+id/view03_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/rgPregunta3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnPaArriba"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Árribaba"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnPaAbajo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ábajoba"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnPaCentro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PálCentro"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnLeviosa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wingardium Leviosa"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta3atras"/>
+
+                <Button
+                    android:id="@+id/btnSiguiente3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="siguiente"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta3siguiente"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt4Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="4º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Que mascota tiene Hermione Granger?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/rgPregunta4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnRata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Una rata"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnLechuza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Una lechuza"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnGamu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tres Gamuzinos"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnGato"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Un gato"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta4atras"/>
+
+                <Button
+                    android:id="@+id/btnSiguiente4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="siguiente"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta4siguiente"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt5Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="5º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Cual de estos objetos son horrocruxes de Voldemort ?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxAnillo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El anillo de Sorvolo Gaunt"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxPeine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="El peine que peina pelo"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxCopa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La Diadema de Rowena Ravenclaw"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxanDiadema"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La Copa de Helga Hufflepuff"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta5atras"/>
+
+                <Button
+                    android:id="@+id/btnSiguiente5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="siguiente"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta5siguiente"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt6Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="6º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Cual es el hechizo para reparar anteojos?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/rgPregunta5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnReparateya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reparateya"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnReparo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Reparo"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnOculus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Oculus Reparo"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnPapyro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Papyro Reparo"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta6atras"/>
+
+                <Button
+                    android:id="@+id/btnSiguiente6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="siguiente"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta6siguiente"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt7Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="7º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Como se llama la serpiente de Voldemort?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/rgPregunta6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnKaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kaa"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnNagini"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nagini"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnShashimi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shashimi"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnTragabuche"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tragabuche"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta7atras"/>
+
+                <Button
+                    android:id="@+id/btnSiguiente7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="siguiente"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta7siguiente"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/linearlayoutmod"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txt8Pregunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="8º Pregunta: "
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="¿Con que animal puede hablar Harry Potter?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/white" />
+
+                <RadioGroup
+                    android:id="@+id/rgPregunta7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnLeon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="León"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnTejon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tejón"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnAguila"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shashimi"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtSerpientes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Serpientes"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingRight="15dp">
+
+
+                <Button
+                    android:id="@+id/btnAtras8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:text="atras"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta8atras"/>
+
+                <Button
+                    android:id="@+id/btnFinalizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="finalizar"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:onClick="pregunta8Finalizar"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <!--
+        android:layout_marginTop="20dp">: Ledamos un espacio por arriba de 20dp
+     -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <!--
+         android:layout_column="0":Asignamos la columna0 al textView
+         android:layout_gravity="center"
+         android:layout_marginLeft="5dp"
+        -->
+        <TextView
+            android:id="@+id/textViewRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="Column 1"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <!-- Para poder cambiar el color del boton he tenido que desactivar el tema por defecto de la app
+            para ello hay que ir a main/res/values/themes.xml y cambiar parent con lo siguiente parent="Theme.AppCompat.DayNight.NoActionBar"
+            lo mismo en main/res/values-night/themes.xml
+         -->
+        <Button
+            android:id="@+id/boton01Row01"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="#CAC8C8"
+            android:text="Column 2"
+            android:textColor="@color/black" />
+
+    </TableRow>
+
+    <!--__________ Le damos un margen tanto arriba como para abajo ___________
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        ______________________________________________________________________
+    -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <!--
+             android:hint="Column 1/2": es el texto de fondo que meustra el editText
+             android:layout_span="2" fusionamos 2 celdas
+        -->
+        <EditText
+            android:id="@+id/editTextRow02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_column="0"
+            android:layout_marginLeft="10dp"
+            android:layout_span="2"
+            android:background="@color/white"
+            android:hint="Column 1/2"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </TableRow>
+
+    <!--
+        Esta fila le meteremos un fondo rojo y adaptado al ancho de la pantalla para simular una linea roja
+        android:padding="1dp": para darle un espacio dentro para que se vea.
+     -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF0000"
+        android:padding="1dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textViewRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="Column 1"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <Button
+            android:id="@+id/boton02Row03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:background="#CAC8C8"
+            android:text="Column 2" />
+
+        <Button
+            android:id="@+id/boton03Row03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="#CAC8C8"
+            android:text="Column 3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/boton01Row04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="#CAC8C8"
+            android:text="Column 3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/boton01Row05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#CAC8C8"
+            android:text="Column 2" />
+    </TableRow>
+
+</TableLayout>

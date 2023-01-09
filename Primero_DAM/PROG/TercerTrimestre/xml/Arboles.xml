@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ARBOLES>
+	<ESPECIE>
+		<n.latin>Acer monspessulanum</n.latin>
+		<n.vulgar>Arce de Montpellier, Arce menor</n.vulgar>
+		<hoja>Caducifolio</hoja>
+		<altura>De 6 a 10 metro</altura>
+		<estructura>Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante</estructura>
+		<color_prim>Haz verde brillante, envés verde blanquecino</color_prim>
+		<color_otoño></color_otoño>
+		<resistencia>Heladas fuertes (hasta -15ºC)</resistencia>
+	</ESPECIE>
+	<ESPECIE>
+		<n.latin>Olea europea</n.latin>
+		<n.vulgar>Olivo</n.vulgar>
+		<hoja>Perenne</hoja>
+		<altura>De 8 a 15 metros</altura>
+		<estructura>Copa irregular. Tronco principal irregular con bifurcaciones.</estructura>
+		<color_prim></color_prim>
+		<color_otoño></color_otoño>
+		<resistencia></resistencia>
+	</ESPECIE>
+	<ESPECIE>
+		<n.latin>Ramaje tortuoso</n.latin>
+		<n.vulgar></n.vulgar>
+		<hoja></hoja>
+		<altura></altura>
+		<estructura></estructura>
+		<color_prim>Haz verde oscuro, envés verde plateado</color_prim>
+		<color_otoño></color_otoño>
+		<resistencia>Heladas medias (hasta -10ºC)</resistencia>
+	</ESPECIE>
+	<ESPECIE>
+		<n.latin>Platanus orientalis</n.latin>
+		<n.vulgar>Platano</n.vulgar>
+		<hoja>Caducifolio</hoja>
+		<altura>De 20 a 25 metros</altura>
+		<estructura>Copa ovoidal. Tronco principal recto. Ramaje expandido</estructura>
+		<color_prim>Haz verde medio, enves verde claro</color_prim>
+		<color_otoño></color_otoño>
+		<resistencia>Heladas fuertes (hasta -20ºC)</resistencia>
+	</ESPECIE>
+	<ESPECIE>
+		<n.latin>Quercus ilex</n.latin>
+		<n.vulgar>Encina</n.vulgar>
+		<hoja>Perenne</hoja>
+		<altura>En torno a 25 metros</altura>
+		<estructura>Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso</estructura>
+		<color_prim>Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado </color_prim>
+		<color_otoño></color_otoño>
+		<resistencia>Heladas fuertes (hasta -15ºC)</resistencia>
+	</ESPECIE>
+</ARBOLES>

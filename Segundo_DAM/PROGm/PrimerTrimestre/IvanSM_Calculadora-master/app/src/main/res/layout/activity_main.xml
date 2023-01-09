@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_column="1"
+    android:background="@drawable/fondobambu"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4">
+
+        <!--
+        He creado un .xml de estilo en res/drawable para que el textView tenga:
+               *Fondo verde
+               *Bordes de 3dp negros
+               *Bordes redondos
+         Me gustaria saber poder ponerle un border shadow al edittext, he buscado pero no he encontrado
+        /-->
+        <TextView
+            android:id="@+id/textViewPantalla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="60dp"
+            android:elevation="10dp"
+            android:gravity="right"
+            android:paddingTop="60dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="60dp"
+            android:background="@drawable/bordes_redondos"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="80sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/botonDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="dividir"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/botonDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="decimales"
+            android:text=","
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/botonMultiplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="multiplicar"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/botonRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="restar"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/botonSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="3"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="sumar"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/botonIgual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="8"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="botonIgual"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/botonPotencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="potencia"
+            android:text="^"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/botonResetear"
+            android:text="AC"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="resetear" />
+
+        <Button
+            android:id="@+id/botonBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/botonmadera"
+            android:onClick="borrar"
+            android:text="--"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="8"
+            android:layout_column="1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirCero"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirSiete"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirOcho"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirNueve"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirCuatro"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/boton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirCinco"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirSeis"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="0"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirUno"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirDos"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/boton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/botonmadera2"
+            android:onClick="escribirTres"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <!--
+         He insertado un Gif como ImagenView pero no consigo
+         hacer que se mueva, no he encontrado resultado y me gustaria saberlo.
+         -->
+        <ImageView
+            android:id="@+id/imageViewPanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="9"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/panda"/>
+
+    </GridLayout>
+
+</LinearLayout>
+

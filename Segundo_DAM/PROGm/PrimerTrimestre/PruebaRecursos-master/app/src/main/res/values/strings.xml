@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PruebaRecursos</string>
+    <string name="inicio">Jugar</string>
+    <string name="configuracion">Configuracion</string>
+    <string name="acerca">Acerca de</string>
+    <string name="salir">Salir</string>
+
+</resources>

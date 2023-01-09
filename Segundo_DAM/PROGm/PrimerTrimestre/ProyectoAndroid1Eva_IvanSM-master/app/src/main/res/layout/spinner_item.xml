@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Modificamos el TextView de los spinners
+    Cambiamos el color del texto despues de seleccionar un item en blanco
+    Modificamos el background para que tenga bordes blancos app/res/layout/spinner_item.xml
+-->
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SpinnerTextoBlanco"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="@drawable/marco_spinner"
+    android:textSize="18sp"
+    android:gravity="left"
+    android:textColor="#FFFFFF" />
