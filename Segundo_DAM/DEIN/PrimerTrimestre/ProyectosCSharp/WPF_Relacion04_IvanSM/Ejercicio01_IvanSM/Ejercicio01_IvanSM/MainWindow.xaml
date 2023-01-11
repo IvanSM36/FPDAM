@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio01_IvanSM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="Test" Height="200" Width="300">
+    
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold" FontSize="15">¿Que color tiene un platano?</Label>
+        <StackPanel Margin="20 5 20 0 ">
+            <RadioButton GroupName="color" Name="rbRojo" FontSize="12">Rojo</RadioButton>
+            <RadioButton GroupName="color" Name="rbAmarillo" FontSize="12">Amarillo</RadioButton>
+            <RadioButton GroupName="color" Name="rbAzul" FontSize="12">Azul</RadioButton>
+            <RadioButton GroupName="color" Name="rbVerde" FontSize="12">Verde</RadioButton>
+        </StackPanel>
+        <Button Margin="20" Width="60" Click="comprobar">Corregir</Button>
+    </StackPanel>
+    
 </Window>

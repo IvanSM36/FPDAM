@@ -24,5 +24,38 @@ namespace Ejercicio01_IvanSM
         {
             InitializeComponent();
         }
+
+        private int intentos = 3;
+
+        // Metodo que comprueba la respuesta de la pregunta
+        private void comprobar (object sender, RoutedEventArgs e)
+        {
+            //Comprueba si el radioButton amarillo esta checkeado
+            if (rbAmarillo.IsChecked == true)
+            {
+                MessageBox.Show("Correcto.");
+            }
+            else
+            {
+                intentos--;// restamos 1 intento si nos equivocamos
+                MessageBox.Show("Incorrecto," + " Te quedan " + intentos + " intentos");
+
+            }
+
+            //Comprobamos si no nos quedan intentos bloqueamoslos radiobuttons
+            if (intentos == 0)
+            {
+                // Bloqueamos los radioButton
+                rbRojo.IsEnabled = false;
+                rbAmarillo.IsEnabled = false;
+                rbAzul.IsEnabled = false;
+                rbVerde.IsEnabled = false;
+                MessageBox.Show("No tequedan intentos");
+            }
+
+        }
+
+
+
     }
 }
