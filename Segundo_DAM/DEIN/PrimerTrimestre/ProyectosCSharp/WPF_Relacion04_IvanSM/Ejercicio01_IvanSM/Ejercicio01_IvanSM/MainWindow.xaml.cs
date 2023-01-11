@@ -31,7 +31,7 @@ namespace Ejercicio01_IvanSM
         private void comprobar (object sender, RoutedEventArgs e)
         {
             //Comprueba si el radioButton amarillo esta checkeado
-            if (rbAmarillo.IsChecked == true)
+            if (rbPlatano.IsChecked == true)
             {
                 MessageBox.Show("Correcto.");
             }
@@ -46,10 +46,10 @@ namespace Ejercicio01_IvanSM
             if (intentos == 0)
             {
                 // Bloqueamos los radioButton
-                rbRojo.IsEnabled = false;
-                rbAmarillo.IsEnabled = false;
-                rbAzul.IsEnabled = false;
-                rbVerde.IsEnabled = false;
+                rbFresa.IsEnabled = false;
+                rbPlatano.IsEnabled = false;
+                rbArandano.IsEnabled = false;
+                rbPera.IsEnabled = false;
                 MessageBox.Show("No tequedan intentos");
             }
 
