@@ -28,7 +28,7 @@
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Column="1">
-            <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtBlockUsuario" Height="30" Width="100" />
+            <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtUser" Height="30" Width="100" />
             <PasswordBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="8" PasswordChar="X" Name="passBoxUser" Height="30" Width="100" />
         </StackPanel>
 
@@ -37,6 +37,6 @@
             Grid.Column: Indica la posicion de la columna
             Grid.ColumnSpan: Fusiona las columnas indicadas
         -->
-        <Button Height="30" Width="100" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"> Iniciar Sesion</Button>
+        <Button Height="30" Width="100" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Click="iniciarSesion"> Iniciar Sesion</Button>
     </Grid>
 </Window>

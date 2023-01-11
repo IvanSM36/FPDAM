@@ -29,9 +29,21 @@ namespace Ejercicio03_IvanSM
         private String pass = "admin";
 
         //Metodo que inicia sesion 
-        private void iniciarSesion(object sender, EventArgs e)
+        private void iniciarSesion(object sender, RoutedEventArgs e)
         {
-            
+            // Recogemos los datos introducidos
+            String datosUser = txtUser.Text;
+            String datosPass = passBoxUser.Password;
+
+            //Comprobamos los datos introducidos para saber si son correctos o no
+            if (datosUser.Equals(user) && datosPass.Equals(pass))
+            {
+                MessageBox.Show("Se ha iniciado sesion correctamente.");
+            }
+            else
+            {
+                MessageBox.Show("Nombre de usuario o contraseña incorrecta." );
+            }
         }
     }
 
