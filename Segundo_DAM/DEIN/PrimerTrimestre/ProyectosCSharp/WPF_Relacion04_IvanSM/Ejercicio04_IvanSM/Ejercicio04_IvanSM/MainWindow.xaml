@@ -12,7 +12,7 @@
             <Border.Effect>
                 <DropShadowEffect BlurRadius="20" Opacity="0.5" ShadowDepth="10" Direction="320" RenderingBias="Performance"/>
             </Border.Effect>
-            <Image Name="imagen" Height="300" Width="300" Source="/image/panda.png" Stretch="Fill" />
+            <Image Name="imagen" Height="300" Width="300" Source="/image/panda.png" />
         </Border>
                 
         <Button Margin="50" Height="50" Width="150"  BorderBrush="Black" Click="cambiarImage" FontSize="15" FontWeight="Bold" >Siguiente imagen</Button>
