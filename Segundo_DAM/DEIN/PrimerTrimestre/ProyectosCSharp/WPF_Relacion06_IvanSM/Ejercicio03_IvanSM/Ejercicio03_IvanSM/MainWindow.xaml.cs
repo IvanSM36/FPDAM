@@ -24,5 +24,40 @@ namespace Ejercicio03_IvanSM
         {
             InitializeComponent();
         }
+
+        /* *
+         *  Metodo que comprueba si hay texto seleccionado 
+         */
+        private void CutCommand_CanExecute(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = (txtEditor != null) && (txtEditor.SelectionLength > 0);
+        }
+
+        /* *
+         *  Metodo que corta el texto seleccionado del textBox
+         */
+        private void CutCommand_Executed(object sender, ExecutedRoutedEventArgs
+        e)
+        {
+            txtEditor.Cut();
+        }
+
+        /* * 
+         *  Metodo que comprueba si hay algo copiado en el portapapeles
+         */
+        private void PasteCommand_CanExecute(object sender,
+        CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = Clipboard.ContainsText();
+        }
+
+        /* *
+         *  Metodo que pega lo que tenga el portapapeles
+         */
+        private void PasteCommand_Executed(object sender, ExecutedRoutedEventArgs e)
+        {
+            txtEditor.Paste();
+        }
+
     }
 }
