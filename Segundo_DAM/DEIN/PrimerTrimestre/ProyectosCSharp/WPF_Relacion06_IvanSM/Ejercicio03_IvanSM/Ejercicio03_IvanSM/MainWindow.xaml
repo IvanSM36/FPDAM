@@ -5,40 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio03_IvanSM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600">
-
-    <!--
-        Command = Nombre del comando
-        CanExecute = Llama al metodo correspondiente que comprueba antes de ejecutarlo
-        Executed = Llama al metodo correspondiente con la funcion para ejecutar el comando
-    -->
-    <Window.CommandBindings>
-        <CommandBinding Command="ApplicationCommands.Cut" CanExecute="CutCommand_CanExecute" Executed="CutCommand_Executed" />
-        <CommandBinding Command="ApplicationCommands.Paste" CanExecute="PasteCommand_CanExecute" Executed="PasteCommand_Executed" />
-    </Window.CommandBindings>
+        Title="MainWindow" Height="450" Width="800">
 
     <Grid>
-        <!--
-            RowDefinition: Le damos una altura especifico de 50
-            con * hacemos que se adapte al resto
-        -->
+        <Grid.Background>
+            <ImageBrush ImageSource="/image/fondo.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="50" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+
         </Grid.RowDefinitions>
 
-        <!-- 
-            Creamos un stackPanel horizontal y le indicamos la posicion de la fila 0
-            Command:  LLamamos al comando por su nombre.
-        -->
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10 0 0 0">
-            <Button Height="20" Width="70" Content="Cortar" Command="ApplicationCommands.Cut"/>
-            <Button Height="20" Width="70" Content="Pegar" Command="ApplicationCommands.Paste" Margin="5 0 0 0" />
+        <Border CornerRadius="10" BorderThickness="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Margin="80,0,0,0">
+                <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/image/nombre.png" Width="70"/>
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" FontSize="50" Margin="20" Foreground="White"  Content="_Nombre:" Target="{Binding ElementName=txtNombre}"/>
+            </StackPanel>
+        </Border>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0">
+            <TextBox TextAlignment="Center" VerticalContentAlignment="Center" Name="txtNombre" Height="50" Width="300" Foreground="White" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.3"/>
+                </TextBox.Background>
+            </TextBox>
+
         </StackPanel>
 
-        <!-- 
-            Especificamos un textBox con la posicion en la fila 1
-        -->
-        <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Name="txtEditor" Grid.Row="1" Height="300" Width="560" Margin="10 0 10 10"></TextBox>
+        <StackPanel  Orientation="Horizontal" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="80 0 0 0 ">
+            <Image HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Source="/image/email.png " Width="70"/>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" FontSize="50" Margin="20" Foreground="White"  Content="_Email:" Target="{Binding ElementName=txtEmail}"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">
+            <TextBox TextAlignment="Center" VerticalContentAlignment="Center" Name="txtEmail" Height="50" Width="300" Foreground="White" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.3"/>
+                </TextBox.Background>
+            </TextBox>
+        </StackPanel>
+
+        <TextBox Name="txtMensaje" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Height="100" Width="500" FontSize="20" Foreground="White" >
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </TextBox.Background>
+        </TextBox>
+
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" >
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="120" FontSize="20" Content="Enviar" Click="login" ToolTip="Enviar mensaje a la empresa"/>
+        </StackPanel>
+        
     </Grid>
+
 </Window>
