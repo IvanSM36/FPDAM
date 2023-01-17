@@ -1,7 +1,9 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,11 +28,30 @@ namespace Ejercicio04_IvanSM
             InitializeComponent();
         }
 
-        private void btnOpenFile_Click(object sender, RoutedEventArgs e)
+        /* *
+         * Metodo para abrir un fichero .txt
+         */
+        private void btnAbrirArchivo(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text files (*.txt)|*.txt"; // Filtra para que solo se pueda abrir archivos .txt
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop); // Establece el directorio inicial en la carpeta "Escritorio"
+
             if (openFileDialog.ShowDialog() == true)
                 txtEditor.Text = File.ReadAllText(openFileDialog.FileName);
+        }
+
+        /* *
+         * Metodo que guarda el contenido del textBox en un archivo .txt
+         */
+        private void btnGuardarArchivo(object sender, RoutedEventArgs e)
+        {         
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text files (*.txt)|*.txt";// Hace que solo se pueda guardar con formato .txt
+            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop); // Establece el directorio inicial en la carpeta "Escritorio"
+
+            if (saveFileDialog.ShowDialog() == true)
+                File.WriteAllText(saveFileDialog.FileName, txtEditor.Text);
         }
     }
 }
