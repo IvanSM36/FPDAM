@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Segundo_DAM",
+    "\\Segundo_DAM\\DEIN",
+    "\\Segundo_DAM\\DEIN\\PrimerTrimestre",
+    "\\Segundo_DAM\\DEIN\\PrimerTrimestre\\ProyectosCSharp",
+    "\\Segundo_DAM\\DEIN\\PrimerTrimestre\\ProyectosCSharp\\WPF_Relacion07_IvanSM"
   ],
   "PreviewInSolutionExplorer": false
 }
