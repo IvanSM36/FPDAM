@@ -7,4 +7,31 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="image\abrir.png" />
+    <None Remove="image\facebook.png" />
+    <None Remove="image\guardar.png" />
+    <None Remove="image\instagram.png" />
+    <None Remove="image\mas.png" />
+    <None Remove="image\nuevoDoc.png" />
+    <None Remove="image\salir.png" />
+    <None Remove="image\tiktok.png" />
+    <None Remove="image\twitter.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\guardar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\abrir.png" />
+    <Resource Include="image\facebook.png" />
+    <Resource Include="image\instagram.png" />
+    <Resource Include="image\mas.png" />
+    <Resource Include="image\nuevoDoc.png" />
+    <Resource Include="image\salir.png" />
+    <Resource Include="image\tiktok.png" />
+    <Resource Include="image\twitter.png" />
+  </ItemGroup>
+
 </Project>
