@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ejercicio01_IvanSM
+namespace WPF_Relacion07_IvanSM
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

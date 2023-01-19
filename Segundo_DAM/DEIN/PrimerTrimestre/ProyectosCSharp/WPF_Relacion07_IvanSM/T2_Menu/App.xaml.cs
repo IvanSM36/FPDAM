@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Ejercicio01_IvanSM
+namespace T2_Menu
 {
     /// <summary>
     /// Interaction logic for App.xaml

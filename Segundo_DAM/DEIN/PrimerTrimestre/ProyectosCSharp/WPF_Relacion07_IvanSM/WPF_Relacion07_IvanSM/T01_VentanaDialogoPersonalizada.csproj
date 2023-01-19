@@ -7,14 +7,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="jungla.jpg" />
-    <None Remove="jungle-1807476_1920.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="jungla.jpg" />
-    <Resource Include="jungle-1807476_1920.jpg" />
-  </ItemGroup>
-
 </Project>

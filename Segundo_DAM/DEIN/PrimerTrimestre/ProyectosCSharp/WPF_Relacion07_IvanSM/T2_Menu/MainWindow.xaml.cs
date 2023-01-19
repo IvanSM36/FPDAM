@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ejercicio01_IvanSM
+namespace T2_Menu
 {
     /// <summary>
-    /// Lógica de interacción para RellenarEmail.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class RellenarEmail : Window
+    public partial class MainWindow : Window
     {
-        public RellenarEmail()
+        public MainWindow()
         {
             InitializeComponent();
         }
