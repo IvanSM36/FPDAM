@@ -17,6 +17,8 @@
     <None Remove="image\salir.png" />
     <None Remove="image\tiktok.png" />
     <None Remove="image\twitter.png" />
+    <None Remove="image\vegetables.jpg" />
+    <None Remove="vegetables.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +34,8 @@
     <Resource Include="image\salir.png" />
     <Resource Include="image\tiktok.png" />
     <Resource Include="image\twitter.png" />
+    <Resource Include="image\vegetables.jpg" />
+    <Resource Include="vegetables.jpg" />
   </ItemGroup>
 
 </Project>

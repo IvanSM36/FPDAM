@@ -13,7 +13,7 @@
         <!--
             Establecemos la posicion del menu y el tamaño de letra
         -->
-        <Menu DockPanel.Dock="Top" FontSize="20">
+        <Menu DockPanel.Dock="Top" FontSize="20" Background="#FF97E6A2">
             
             <!--
                 Creamos los items del menu
@@ -86,8 +86,12 @@
             </MenuItem>
             
         </Menu>
-        
-        <TextBox AcceptsReturn="True" />
-        
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="/vegetables.jpg"/>
+            </Grid.Background>
+
+        </Grid>
+
     </DockPanel>
 </Window>
