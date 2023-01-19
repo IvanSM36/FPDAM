@@ -5,8 +5,72 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Relacion07_IvanSM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="400" Width="600">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/image/jungla.jpg"/>
+        </Grid.Background>
+
+        <Border  BorderBrush="White" BorderThickness="3" CornerRadius="20" Height="300" Width="400">
+            <Border.Background>
+                <SolidColorBrush Color="#FF031204" Opacity="0.4"/>
+            </Border.Background>
+
+            <Border.Effect>
+                <DropShadowEffect/>
+            </Border.Effect>
+
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" Width="400"  >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0">
+                    <TextBlock Foreground="White" FontSize="30" TextDecorations="Underline">
+                        <TextBlock.Effect>
+                            <DropShadowEffect/>
+                        </TextBlock.Effect>Registrar usuario</TextBlock>
+                </Grid>
+
+                <Grid HorizontalAlignment="Left" Margin="20 0 0 0" Grid.Column="0" Grid.Row="1">
+                    <Label FontSize="30" Foreground="White" Content="Nombre:"/>
+                </Grid>
+
+                <Grid HorizontalAlignment="Left" Margin="20 0 0 0"  Grid.Column="0" Grid.Row="2">
+                    <Label FontSize="30" Foreground="White" Content="Apellidos:"/>
+                </Grid>
+
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="20 0 0 0" Grid.Column="0" Grid.Row="3">
+                    <Label FontSize="30" Foreground="White" Content="Email:" ></Label>
+                </Grid>
+
+                <Grid HorizontalAlignment="Center"  VerticalAlignment="Center"  Grid.Column="1" Grid.Row="1">
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5" Height="40" Width="200" FontSize="20"></TextBox>
+                </Grid>
+
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="2">
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5"  Height="40" Width="200" FontSize="20"></TextBox>
+                </Grid>
+
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="3">
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5" Name="txtEmail" Height="40" Width="200" IsEnabled="False" Background="White" FontSize="20"></TextBox>
+                </Grid>
+
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4">
+                    <Button Height="40" Width="200" FontSize="20" Margin="20" Click="aniadirEmail" Content="Rellenar Email" ClipToBounds="True"/>
+                </Grid>
+
+            </Grid>
+        </Border>
 
     </Grid>
 </Window>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Relacion07_IvanSM", "WPF_Relacion07_IvanSM\WPF_Relacion07_IvanSM.csproj", "{C3B347A1-4AFF-45CA-84AB-E18F5C3B00A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Relacion07_IvanSM", "WPF_Relacion07_IvanSM\WPF_Relacion07_IvanSM.csproj", "{C1E0C708-9BF1-4351-97DB-AB5721527172}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3B347A1-4AFF-45CA-84AB-E18F5C3B00A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3B347A1-4AFF-45CA-84AB-E18F5C3B00A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3B347A1-4AFF-45CA-84AB-E18F5C3B00A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3B347A1-4AFF-45CA-84AB-E18F5C3B00A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1E0C708-9BF1-4351-97DB-AB5721527172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E0C708-9BF1-4351-97DB-AB5721527172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E0C708-9BF1-4351-97DB-AB5721527172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E0C708-9BF1-4351-97DB-AB5721527172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {EDD9CEC0-8932-49BD-BAAE-F92A8B95C7D5}
+		SolutionGuid = {69F1BC56-FC37-442F-BB14-F0BFC0A304D3}
 	EndGlobalSection
 EndGlobal

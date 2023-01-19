@@ -24,5 +24,14 @@ namespace WPF_Relacion07_IvanSM
         {
             InitializeComponent();
         }
+        private void aniadirEmail(object sender, RoutedEventArgs e)
+        {
+            RellenarEmail email = new RellenarEmail();
+
+            if (email.ShowDialog() == true)
+            {
+                txtEmail.Text = email.Respuesta;
+            }
+        }
     }
 }
