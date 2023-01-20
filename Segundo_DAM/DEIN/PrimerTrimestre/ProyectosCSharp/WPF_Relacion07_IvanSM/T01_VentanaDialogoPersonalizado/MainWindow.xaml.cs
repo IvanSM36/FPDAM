@@ -30,7 +30,7 @@ namespace T01_VentanaDialogoPersonalizado
          */
         private void aniadirEmail(object sender, RoutedEventArgs e)
         {
-            IntroducirEmail email = new IntroducirEmail();
+            IntroducirEmail email = new IntroducirEmail("Introduzca tu Email: ", " "); // Si no introducimos parametros, coge la pregunta por defecto de la ventana IntroducirEmail.xaml
 
             if (email.ShowDialog() == true)
             {

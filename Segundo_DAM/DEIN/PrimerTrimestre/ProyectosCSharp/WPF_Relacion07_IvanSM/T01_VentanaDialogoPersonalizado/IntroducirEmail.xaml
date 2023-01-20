@@ -32,7 +32,7 @@
             <!--
                 Creo un label con la pregunta que pasamos por parametros o establecemos una por defecto
             -->
-            <Label Name="lblQuestion" Foreground="White" Grid.Column="1">Introduzca tu Email:</Label>
+            <Label Name="lblQuestion" Foreground="White" Grid.Column="1">Email:</Label>
 
             <!--
                 Creo un textBox donde recogemos por teclado el Email
