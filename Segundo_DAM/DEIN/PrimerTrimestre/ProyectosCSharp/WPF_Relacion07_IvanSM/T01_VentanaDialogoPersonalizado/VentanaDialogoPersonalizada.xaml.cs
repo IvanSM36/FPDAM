@@ -17,14 +17,14 @@ namespace T01_VentanaDialogoPersonalizado
     /// <summary>
     /// Lógica de interacción para IntroducirEmail.xaml
     /// </summary>
-    public partial class IntroducirEmail : Window
+    public partial class VentanaDialogoPersonalizado : Window
     {
 
         /* /
          * Constructor sin parametros, para cuando no pidamos una pregunta coja la que hay por defecto en el .xaml
          * 
          */
-        public IntroducirEmail()
+        public VentanaDialogoPersonalizado()
         {
             InitializeComponent();
         }
@@ -32,13 +32,13 @@ namespace T01_VentanaDialogoPersonalizado
         /* *
          * Constructor que recoge por parametro una pregunta y respuesta para la ventana dialogo
          */
-        public IntroducirEmail(string question, string defaultRespuesta = "")
+        public VentanaDialogoPersonalizado(string pregunta, string defaultRespuesta = "")
         {
             InitializeComponent();
 
-            lblQuestion.Content = question;
+            lblPregunta.Content = pregunta;
 
-            txtRespuestaEmail.Text = defaultRespuesta;
+            txtRespuesta.Text = defaultRespuesta;
         }
 
         /* *
@@ -54,8 +54,8 @@ namespace T01_VentanaDialogoPersonalizado
          */
         private void Window_ContentRendered(object sender, EventArgs e)
         {
-            txtRespuestaEmail.SelectAll();
-            txtRespuestaEmail.Focus();
+            txtRespuesta.SelectAll();
+            txtRespuesta.Focus();
         }
 
         /* *
@@ -63,7 +63,7 @@ namespace T01_VentanaDialogoPersonalizado
          */
         public string Respuesta
         {
-            get { return txtRespuestaEmail.Text; }
+            get { return txtRespuesta.Text; }
         }
 
     }
