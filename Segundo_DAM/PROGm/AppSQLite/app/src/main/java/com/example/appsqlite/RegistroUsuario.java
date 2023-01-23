@@ -2,6 +2,7 @@ package com.example.appsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -28,11 +29,11 @@ public class RegistroUsuario extends AppCompatActivity {
     }
 
     public void onClick(View view){
-       // registrarUsuarios();
-        registrarUsuariosSql();
+        registrarUsuarios();
+        //registrarUsuariosSql();
     }
 
-    private void registrarUsuariosSql(){
+   /* private void registrarUsuariosSql(){
         //Hago la conexion con la BBDD
         ConexionSQLiteHelper con = new ConexionSQLiteHelper(this, "bd_usuarios", null, 1);
         SQLiteDatabase db = con.getWritableDatabase(); // Edito la BBDD
@@ -47,16 +48,16 @@ public class RegistroUsuario extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(), "Ha insertado un valor en la tabla Usuario", Toast.LENGTH_SHORT).show();
         db.close();
-    }
+    }*/
 
-    /*
+
         private void registrarUsuarios(){
             // Hago la conexion con la BBDD
             ConexionSQLiteHelper con = new ConexionSQLiteHelper(this, "bd_usuarios", null, 1);
              SQLiteDatabase db = con.getWritableDatabase(); // Edito la BBDD
 
              ContentValues values = new ContentValues();
-             values.put(Utilidades.CAMPO_ID, campoId.getTextt().toString());
+             values.put(Utilidades.CAMPO_ID, campoId.getText().toString());
              values.put(Utilidades.CAMPO_NOMBRE, campoNombre.getText().toString());
              values.put(Utilidades.CAMPO_TELEFONO, campoTelefono.getText().toString());
 
@@ -67,6 +68,6 @@ public class RegistroUsuario extends AppCompatActivity {
              db.close();
         }
 
-     */
+
 
 }

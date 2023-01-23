@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(miIntent);
                 break;
             case R.id.btnConsultarUser:
-                //miIntent = new Intent(MainActivity.this,);
+                miIntent = new Intent(MainActivity.this, ConsultarUsuario.class);
                 startActivity(miIntent);
                 break;
         }
