@@ -7,77 +7,105 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     
+    <!--
+        Creo un Grid donde introduciremos todo
+    -->
     <Grid>
-        <Grid>
+        <!--
+            Introducimos un TabControl y le damos la posicion left y con nombre Pestanias
+            Agregamos los items que serian las pestañas.
+        -->
+        <TabControl TabStripPlacement="Left" Name="Pestanias">
 
-            <TabControl TabStripPlacement="Left" Name="Pestanias">
+            <!--
+                Pestaña Valores
+            -->
+            <TabItem Name="Valores" ToolTip="Introduce 2 valores numericos">
+                <TabItem.Header>
+                    <Image Source="/image/calculadora.png" Height="50" Width="50" />
+                </TabItem.Header>
                 
-                <TabItem Name="Valores">
-                    
-                    <TabItem.Header>
-                        <Image Source="/image/calculadora.png" Height="50" Width="50" />
-                    </TabItem.Header>
-                    
-                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+                <!--
+                    Creo un grid y espedifico el tamaño de filas y columnas para posicionar y ordenar el contenido de la pestaña
+                -->
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
 
-                        <Label Grid.Column="0" Grid.Row="0" Content="Introduzca un valor numerico: " FontSize="20"  />
-                        <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtBoxNum01" Grid.Column="1" Grid.Row="0" Height="50" Width="200" FontSize="20"/>
+                    <!--
+                        Introducimos los elementos y le damos una posicion en el grid
+                    -->
+                    <Label Grid.Column="0" Grid.Row="0" Content="Introduzca un valor numerico: " FontSize="20"  />
+                    <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtBoxNum01" Grid.Column="1" Grid.Row="0" Height="50" Width="200" FontSize="20"/>
 
-                        <Label Grid.Column="0" Grid.Row="1" Content="Introduzca el segundo valor numerico: " FontSize="20" />
-                        <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Name="txtBoxNum02" Height="50" Width="200" FontSize="20"/>
+                    <Label Grid.Column="0" Grid.Row="1" Content="Introduzca el segundo valor numerico: " FontSize="20" />
+                    <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Name="txtBoxNum02" Height="50" Width="200" FontSize="20"/>
 
-                    </Grid>
-                </TabItem>
+                </Grid>
+            </TabItem>
+
+            <!--
+                Pesaña Calcular 
+            -->
+            <TabItem MouseLeftButtonUp="calcular" ToolTip="Calcula la multiplicacion de los valores numericos anteriores">
+                <TabItem.Header>
+                    <Image Source="/image/resultado.png" Height="50" Width="50"/>
+                </TabItem.Header>
                 
-                <TabItem MouseLeftButtonUp="calcular">
-                    <TabItem.Header>
-                        <Image Source="/image/resultado.png" Height="50" Width="50"/>
-                    </TabItem.Header>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <Label Content="Resultado: " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
-                        <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtBoxResultado" Height="50" Width="100" IsEnabled="False" />
-                    </StackPanel>
-                </TabItem>
+                <!--
+                    Creamos un stackPanel para posicionar los elementos
+                ç-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label Content="Resultado: " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+                    <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtBoxResultado" Height="50" Width="100" IsEnabled="False" />
+                </StackPanel>
                 
-                <TabItem>
-                    <TabItem.Header>
-                        <Image Source="/image/imagen.png" Height="50" Width="50" />
-                    </TabItem.Header>
+            </TabItem>
 
-                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" >
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+            <!--
+                Pestaña imagenes
+            -->          
+            <TabItem ToolTip="Texto con imagenes">
+                <TabItem.Header>
+                    <Image Source="/image/imagen.png" Height="50" Width="50" />
+                </TabItem.Header>
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
+                <!--
+                    Creo un grid y espedifico el tamaño de filas y columnas para posicionar y ordenar el contenido de la pestaña
+                -->
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
 
-                        <TextBlock TextWrapping="WrapWithOverflow" Grid.RowSpan="2" FontSize="20" Padding="10"> Las siguientes imagenes causan ilusion optica una de ellas parece estar en movimiento,
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <!--
+                        Introducimos los elementos y le damos una posicion en el grid
+                    -->
+                    <TextBlock TextWrapping="WrapWithOverflow" Grid.RowSpan="2" FontSize="20" Padding="10"> Las siguientes imagenes causan ilusion optica una de ellas parece estar en movimiento,
                             la otra imagen se debe mantener la mirada unos 30seg sin parpadear, una vez pasado esos segundos cierra los ojos y veras un circulo con el color magenta. Esta colunuma esta fusionada con un ColumSpan. Esto es un texto de relleno
                             Esto es un texto de relleno Esto es un texto de relleno Esto es un texto de relleno Esto es un texto de relleno Esto es un texto de relleno Esto es un texto de relleno Esto es un texto de relleno
-                        </TextBlock>
-                            
-                        <Image Grid.Column="1" Grid.Row="0" Source="/image/ilusion2.png"></Image>
+                    </TextBlock>
 
-                        <Image Grid.Column="1" Grid.Row="1" Source="/image/ilusion.jpg"></Image>
+                    <Image Grid.Column="1" Grid.Row="0" Source="/image/ilusion2.png"></Image>
 
-                    </Grid>
-                </TabItem>
-            </TabControl>
+                    <Image Grid.Column="1" Grid.Row="1" Source="/image/ilusion.jpg"></Image>
 
-        </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>
