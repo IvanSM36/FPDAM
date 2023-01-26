@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T01_ListBox_IvanSM"
         mc:Ignorable="d"
-        Title="ListaTareas" Height="450" Width="400">
+        Title="ListaTareas" Height="450" Width="430">
 
     <!--
         Establezco un grid para ponerle un  color de fondo 
@@ -30,7 +30,7 @@
                 <!--
                     Creo el Listbox
                 -->
-                <ListBox HorizontalContentAlignment="Center" Name="lbTareas" Margin="20 5 20 20" Padding="20" Grid.Row="1" FontSize="18">
+                <ListBox HorizontalContentAlignment="Stretch" Name="lbTareas" Margin="20 5 20 20" Padding="20" Grid.Row="1" FontSize="18">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
@@ -44,7 +44,7 @@
                                 <TextBlock Grid.Column="0" Text="{Binding Descripcion}" Margin="5"/>
                                 <TextBlock Grid.Column="1" Text="{Binding Prioridad}" Margin="5"/>
                                 <ProgressBar Grid.Column="2" Minimum="0" Maximum="100" Value="{Binding NivelRealizacion}" Margin="5"/>
-                                <Button Grid.Column="3" Height="30" Width="100" >Seleccionar</Button>
+                                <Button Grid.Column="3" Height="30" Width="100" Click="seleccionar" >Seleccionar</Button>
                                 
                             </Grid>
                         </DataTemplate>

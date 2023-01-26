@@ -34,7 +34,7 @@ namespace T01_ListBox_IvanSM
         {
 
             foreach (object o in lbTareas.SelectedItems)
-                //MessageBox.Show((o as item).Descripcion);
+                MessageBox.Show("Tarea seleccionada: " + (o as Tarea).Descripcion , "Tarea", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }
