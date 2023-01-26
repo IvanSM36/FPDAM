@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
         
         <Border Background="#FF523131" BorderThickness="4" CornerRadius="20" Margin="5" >
-            <ListBox Margin="20" Padding="20" Grid.Column="0" Grid.Row="0" FontSize="18">
+            <ListBox Name="lbTareas" Margin="20" Padding="20" Grid.Column="0" Grid.Row="0" FontSize="18">
                 <TextBlock FontWeight="Bold" TextDecorations="Underline">Tareas:</TextBlock>
                 <ListBoxItem Content="ListBox Item #1" />
                 <ListBoxItem Content="ListBox Item #2" />

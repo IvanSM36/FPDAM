@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="T01R11_ListBox" Height="350" Width="500">
    
-    <Grid Background="#FF00C190">
+    <Grid Background="#FF7BC5B2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />

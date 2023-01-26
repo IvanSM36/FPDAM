@@ -24,16 +24,19 @@ namespace T01_ListBox_IvanSM
         {
             InitializeComponent();
 
+        }
+
+        private void agregarTarea (object sender, RoutedEventArgs e)
+        {
             List<Tarea> items = new List<Tarea>();
             items.Add(new Tarea()
             {
-                Title = "Complete this WPF tutorial",
-                Completion = 45
+                Descripcion = "Complete this WPF tutorial",
+                Prioridad = 45
             });
-            items.Add(new Tarea() { Title = "Learn C#", Completion = 80 });
-            items.Add(new Tarea() { Title = "Wash the car", Completion = 0 });
-            lbTodoList.ItemsSource = items;
-
+            items.Add(new Tarea() { Descripcion = "Learn C#", Prioridad = 80 });
+            items.Add(new Tarea() { Descripcion = "Wash the car", Prioridad = 0 });
+            lbTareas.ItemsSource = items;
         }
     }
 }

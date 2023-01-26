@@ -8,5 +8,26 @@ namespace T01_ListBox_IvanSM
 {
     class Tarea
     {
+        //Atributos
+        private String descripcion;
+        private int prioridad;
+
+        //Constructores
+
+        public Tarea()
+        {
+        }
+
+        public Tarea(string descripcion, int prioridad)
+        {
+            this.Descripcion = descripcion;
+            this.Prioridad = prioridad;
+        }
+
+        //Getter and Setter
+        public string Descripcion { get => descripcion; set => descripcion = value; }
+        public int Prioridad { get => prioridad; set => prioridad = value; }
     }
+
+
 }
