@@ -15,17 +15,32 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <Border Background="#FF523131" BorderThickness="4" CornerRadius="20" Margin="5" >
-            <ListBox Name="lbTareas" Margin="20" Padding="20" Grid.Column="0" Grid.Row="0" FontSize="18">
-                <TextBlock FontWeight="Bold" TextDecorations="Underline">Tareas:</TextBlock>
-                <ListBoxItem Content="ListBox Item #1" />
-                <ListBoxItem Content="ListBox Item #2" />
-                <ListBoxItem Content="ListBox Item #3" />
-                <ListBoxItem Content="ListBox Item #4" />
-                <ListBoxItem Content="ListBox Item #5" />
-                <ListBoxItem Content="ListBox Item #6" />
-            </ListBox>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Margin="7" Text="Tareas:" TextDecorations="Underline" FontWeight="Bold" FontSize="30"/>
+
+                <Border>
+                    
+                </Border>
+                <ListBox Name="lbTareas" Margin="20 5 20 20" Padding="20" Grid.Row="1" FontSize="18">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Descripcion}" Margin="5"/>
+                                    <TextBlock Text="{Binding Prioridad}" Margin="5"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
         </Border>
 
     </Grid>
