@@ -61,7 +61,7 @@ namespace T01_ListBox_IvanSM {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/T03_SeleccionarTarea;V1.0.0.0;component/listatareas.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/T03_SeleccionarTarea;component/listatareas.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ListaTareas.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

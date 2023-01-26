@@ -21,24 +21,20 @@ namespace T01_ListBox_IvanSM
     /// </summary>
     public partial class ListaTareas : Window
     {
+        // Creo una lista donde luego iremos añadiendo los items
+        List<Tarea> items = new List<Tarea>();
 
         public ListaTareas()
         {
             InitializeComponent();
-            // Creo una lista donde luego iremos añadiendo los items
-            List<Tarea> items = new List<Tarea>();
+
         }
 
         private void seleccionar (Object sender, RoutedEventArgs e)
         {
-           /* foreach (object o in lbTareas.Items)
-            {
-                if ((o is TodoItem) && ((o as TodoItem).Title.Contains("C#")))
-                {
-                    lbTareas.SelectedItem = o;
-                    break;
-                }
-            }*/
+
+            foreach (object o in lbTareas.SelectedItems)
+                //MessageBox.Show((o as item).Descripcion);
         }
     }
 }
