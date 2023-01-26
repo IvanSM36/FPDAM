@@ -23,6 +23,17 @@ namespace T01_ListBox_IvanSM
         public MainWindow()
         {
             InitializeComponent();
+
+            List<Tarea> items = new List<Tarea>();
+            items.Add(new Tarea()
+            {
+                Title = "Complete this WPF tutorial",
+                Completion = 45
+            });
+            items.Add(new Tarea() { Title = "Learn C#", Completion = 80 });
+            items.Add(new Tarea() { Title = "Wash the car", Completion = 0 });
+            lbTodoList.ItemsSource = items;
+
         }
     }
 }
