@@ -6,17 +6,20 @@
         xmlns:local="clr-namespace:T01_ListBox_IvanSM"
         mc:Ignorable="d"
         Title="ListaTareas" Height="450" Width="400">
-    
+
+    <!--
+        Establezco un grid para ponerle un  color de fondo 
+    -->
     <Grid Background="#FF7BC5B2">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
+        
+        <!--
+            Añado un Border 
+        -->
         <Border Background="#FF523131" BorderThickness="4" CornerRadius="20" Margin="5" >
+            
+            <!--
+                Creo otro grid con 2 filas una para el texblock Tareas y otra para el ListBox
+            -->               
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50" />
@@ -24,10 +27,9 @@
                 </Grid.RowDefinitions>
                 
                 <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Margin="7" Text="Tareas:" TextDecorations="Underline" FontWeight="Bold" FontSize="30"/>
-
-                <Border>
-                    
-                </Border>
+                <!--
+                    Creo el Listbox
+                -->
                 <ListBox Name="lbTareas" Margin="20 5 20 20" Padding="20" Grid.Row="1" FontSize="18">
                     <ListBox.ItemTemplate>
                         <DataTemplate>

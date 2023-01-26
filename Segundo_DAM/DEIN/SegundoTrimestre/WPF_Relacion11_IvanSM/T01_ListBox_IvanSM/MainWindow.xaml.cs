@@ -20,19 +20,25 @@ namespace T01_ListBox_IvanSM
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        // Creo una lista donde luego iremos añadiendo los items
         List<Tarea> items = new List<Tarea>();
+
         public MainWindow()
         {
             InitializeComponent();
             
         }
 
+        /* *
+         * Metodo que abre una nueva ventana y agrega una nueva tarea
+         */
         private void agregarTarea (object sender, RoutedEventArgs e)
         {
-            ListaTareas lt = new ListaTareas(); 
-            items.Add(new Tarea() { Descripcion = txtBoxDescripcion.Text, Prioridad = int.Parse(txtBoxPrioridad.Text) });
-            lt.lbTareas.ItemsSource = items;
-            lt.ShowDialog();
+            ListaTareas lt = new ListaTareas();  // Instancio la venatana
+            items.Add(new Tarea() { Descripcion = txtBoxDescripcion.Text, Prioridad = int.Parse(txtBoxPrioridad.Text) }); // recogo los datos de los txtBox y lo agrego a la tarea
+            lt.lbTareas.ItemsSource = items; // Agrego la tarea
+            lt.ShowDialog();// llamo a la ventana
 
         }
     }
