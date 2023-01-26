@@ -5,10 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:T01_ListBox_IvanSM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="T01R11_ListBox" Height="350" Width="500">
+   
+    <Grid Background="#FF00C190">
         <Grid.ColumnDefinitions>
-            
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+         
+            <Label Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="20 0 0 0" FontSize="20" >Prioridad de la tarea:</Label>
+            <TextBox Grid.Column="1" Grid.Row="0" Height="30" Width="200" Margin="20 0 20 0" FontSize="20"/>
+
+            <Label Grid.Column="0" Grid.Row="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="20 0 0 0" FontSize="20">Descripcion de la tarea:</Label>
+            <TextBox Grid.Column="1" Grid.Row="1" Height="30" Width="200" Margin="20 0 20 0" FontSize="20"/>
+
+            <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Height="30" Width="100">Agregar Tarea</Button>
+        
+        
+        
     </Grid>
 </Window>

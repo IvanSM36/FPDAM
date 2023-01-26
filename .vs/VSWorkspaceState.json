@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Segundo_DAM",
+    "\\Segundo_DAM\\DEIN",
+    "\\Segundo_DAM\\DEIN\\SegundoTrimestre",
+    "\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion11_IvanSM",
+    "\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion11_IvanSM\\T01_ListBox_IvanSM"
   ],
-  "SelectedNode": "\\WPF_Relacion11_IvanSM.sln",
+  "SelectedNode": "\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion11_IvanSM\\T01_ListBox_IvanSM\\MainWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
