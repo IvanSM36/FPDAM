@@ -25,8 +25,8 @@ namespace T01_ListBox_IvanSM
         }
 
         //Getter and Setter
-        public string Descripcion { get => descripcion; set => descripcion = value; }
-        public int Prioridad { get => prioridad; set => prioridad = value; }
+        public string Descripcion { get; set; }
+        public int Prioridad { get; set; }
     }
 
 
