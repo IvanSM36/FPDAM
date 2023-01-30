@@ -8,14 +8,28 @@
         Title="MainWindow" Height="450" Width="600">
     
     <Grid>
-        <ListView Name="">
+        <ListView Name="lvTabla">
             <ListView.View >
                 <GridView>
-                    <GridViewColumn Header="Nombre" Width="150" DisplayMemberBinding="{Binding Nombre}"/>
+                    <GridViewColumn Header="Nombre" Width="120" DisplayMemberBinding="{Binding Nombre}"/>
                     <GridViewColumn Header="Apellidos" Width="150" DisplayMemberBinding="{Binding Apellidos}"/>
-                    <GridViewColumn Header="DNI" Width="100" DisplayMemberBinding="{Binding Dni}"/>
-                    <GridViewColumn Header="Email" Width="100" DisplayMemberBinding="{Binding Email}"/>
-                    <GridViewColumn Header="Edad" Width="100" DisplayMemberBinding="{Binding Edad}"/>
+                    
+                    <GridViewColumn Header="DNI" Width="130">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Dni}" Foreground="Black"  FontWeight="Bold"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    
+                    <GridViewColumn Header="Email" Width="130">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Email}" Background="#FF965A5A"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    <GridViewColumn Header="Edad" Width="50" DisplayMemberBinding="{Binding Edad}"/>
                 </GridView>
             </ListView.View>
         </ListView>
