@@ -3,13 +3,17 @@ package com.example.spinnerdb.entidades;
 public class Usuario {
 
     // Atributos
-    private int id;
+    private Integer id;
     private String nombre;
     private String pass;
-    private int telefono;
+    private String telefono;
 
     // Constructores
-    public Usuario(int id, String nombre, String pass, int telefono) {
+    public Usuario() {
+
+    }
+
+    public Usuario(Integer id, String nombre, String pass, String telefono) {
         this.id = id;
         this.nombre = nombre;
         this.pass = pass;
@@ -17,11 +21,11 @@ public class Usuario {
     }
 
     // Getter and Setter
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -41,11 +45,11 @@ public class Usuario {
         this.pass = pass;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 }

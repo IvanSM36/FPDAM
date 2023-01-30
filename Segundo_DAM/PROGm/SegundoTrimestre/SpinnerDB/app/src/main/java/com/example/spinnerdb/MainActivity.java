@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
                 miIntent = new Intent(MainActivity.this, ConsultarUsuario.class);
                 startActivity(miIntent);
                 break;
+            case R.id.btnConsultaSpinner:
+                miIntent = new Intent(MainActivity.this, ConsultarSpinner.class);
+                startActivity(miIntent);
+                break;
         }
     }
 

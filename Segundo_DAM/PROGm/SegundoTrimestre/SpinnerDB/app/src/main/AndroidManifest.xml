@@ -13,6 +13,13 @@
         android:theme="@style/Theme.SpinnerDB"
         tools:targetApi="31">
         <activity
+            android:name=".ConsultarSpinner"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".RegistroUsuario"
             android:exported="false">
             <meta-data
