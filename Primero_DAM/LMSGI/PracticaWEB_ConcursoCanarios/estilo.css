@@ -1,0 +1,537 @@
+
+
+h1{
+margin: 10px auto;
+text-align: center;
+text-decoration: underline;
+font-size: 40px;
+}
+
+h2{
+
+    text-align: center;
+    text-decoration: underline;
+    
+    }
+
+ p{
+
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+
+ }
+td{
+
+padding: 10px;
+
+}
+
+body{
+    background: rgb(41, 78, 41);
+}
+
+header{
+
+    
+    float: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    overflow: hidden;
+    background: #609456;
+    border-radius: 15px;
+}
+.atom {
+
+    width: 5%;
+    float: right;
+    margin: 0px auto;
+    background-image: url(img/atom1.png);
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 2%;
+
+}
+
+
+
+.facebook{
+
+    width: 5%;
+    float: right;
+    margin: 0px auto;
+    background-image: url(img/facebook.png);
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.instagram{
+
+    width: 5%;
+    float: right;
+    margin: 0px auto;
+    background-image: url(img/insta.png);
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.twitter{
+
+    width: 5%;
+    float: right;
+    margin: 0px auto;
+    background-image: url(img/twitter.png);
+    background-size: 100% 100%;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+
+.rss{
+
+     width: 5%;
+     float: right;
+     margin: 0px auto;
+     background-image: url(img/rss.png);
+     background-size: 100% 100%;
+     padding: 20px;
+     border-radius: 2%;
+}
+
+.logo{
+
+    width: 40%;
+    float: left;
+    margin: 0px auto;
+    background-image: url(img/logo.png) ;
+    background-size: 100% 100%;
+    padding: 100px;
+    border-radius: 2%;
+    
+}
+
+section{
+
+    float: center;
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    overflow: hidden;
+    background: #609456;
+    border-radius: 15px;
+
+}
+
+
+footer {
+
+    background: #000000;
+    float: center;
+    padding: 10px;
+    margin: 20px auto;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+footer section{
+width: 98%;
+
+
+
+}
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    
+}
+  
+li {
+    
+    float: left;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0px 20px 0px; 
+    margin: 100px 0px 0px 0px;
+    list-style-type: none;
+    
+}
+  
+
+
+li a {
+
+    color:white;
+    padding: 50px;
+    text-decoration: none;
+    
+   
+  }
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+    padding: 21px 50px 23px 50px; 
+}
+     
+li:hover:not(.active) {
+      
+     color:#fff;
+     background:  #3ddf3837;
+        
+      
+}
+ table{
+
+    float: center;
+
+
+
+ }
+  .columnacom {
+    float: left;
+    padding: 80px;
+    height: 100%;
+    width: 10%;
+    margin: -49px -225px 0px 60px;
+  }
+
+ .columnacom.tom {
+    
+    
+    background: url(img/Tom.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .columnacom.silve {
+    
+   
+    background: url(img/Silvestre.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+  .columnacom.garf {
+    
+    
+    background: url(img/Garfield.png)  no-repeat center;
+    background-size: 100% 100%;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+
+.columnagal {
+    float: left;
+    margin: 0% -6% 2% 13%;
+    width: 20%;
+    height: 100%;
+    font-size: 30px auto;
+    font-weight: bold;;
+    text-align: center;
+    text-decoration: underline overline ;
+    
+}
+
+.columnagal.left{
+
+    color: #ca2a2a;
+    border-radius: 15px;
+    background: url(img/ganardor1_a.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    padding: 60px;
+    font-size: 30px auto;
+}
+.columnagal.left:hover{
+
+    background-image:url(img/ganardor1_b.jpg) ;
+    display: block;
+    color: transparent;
+}
+
+.columnagal.left2{
+
+    color: #ca2a2a;
+    border-radius: 15px;
+    background: url(img/ganardor4_a.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    padding: 60px;
+
+}
+.columnagal.left2:hover{
+
+    background-image:url(img/ganardor4_b.jpg) ;
+    display: block;
+    color: transparent;
+}
+
+.columnagal.centro{
+
+    color: #ca2a2a;
+    border-radius: 15px;
+    background: url(img/ganardor2_a.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    padding: 60px;
+
+}
+.columnagal.centro:hover{
+
+    background-image:url(img/ganardor2_b.jpg) ;
+    display: block;
+    color: transparent;
+}
+.columnagal.centro2{
+
+    color: #ca2a2a;
+    border-radius: 15px;
+    background: url(img/ganardor5_a.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    padding: 60px;
+}
+.columnagal.centro2:hover{
+
+    background-image:url(img/ganardor5_b.jpg) ;
+    display: block;
+    color: transparent;
+}
+.columnagal.rigth{
+
+    color: #ca2a2a;
+    border-radius: 15px;
+    background: url(img/ganardor3_a.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    padding: 60px;
+
+}
+.columnagal.rigth:hover{
+
+    background-image:url(img/ganardor3_b.jpg) ;
+    display: block;
+    color: transparent;
+}
+
+.columnagal.rigth2{
+
+    color: #ca2a2a;
+    border-radius: 15px;
+    background: url(img/ganardor6_a.jpg)  no-repeat center;
+    background-size: 100% 100%;
+    padding: 60px;
+
+}
+.columnagal.rigth2:hover{
+
+    background-image:url(img/ganardor6_b.jpg) ;
+    display: block;
+    color: transparent;
+}
+
+
+/*Formulario*/
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px; 
+	min-height:670px; 
+	position:relative;
+	
+}
+.login-html{
+	width:100%; 
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px; 
+	background:#174b158c; 
+
+}
+
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#3ddf3837; 
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:#174b1556;
+}
+.login-form .group input[data-type="password"]{
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+/* Color Boton Iniciar Sesion y Registrar */
+.login-form .group .button{
+    
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: #3ddf3837;
+    border: 2px solid;
+    border-color: #174b1537;
+    position: relative;
+}
+/* EfectoDelBoton*/
+.login-form .group .button:hover {
+    background-color:174b1537;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px 174b1537;
+    transition: all 0.2s ease;
+    }
+
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+
+/* Giro Rotatorio */
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+/*FIN Formulario */
+/*Calendario */
+
+.calendario{
+
+    
+    background: #184714;
+    width: 50%;
+    margin: 10px auto;
+    border-radius:15px ;
+}
+.tablecal{
+    margin: 10px auto;
+    border: 5px;
+}
+
+    @media (max-width: 1160px) {.logo, a, li, ul, section, header, footer, .columnacom {
+    
+        width: 90%;
+        height: 100%;
+        margin: 20px auto;
+        text-align: center;
+        float: center;
+      }
+     
+
+
+    }
+
+
+

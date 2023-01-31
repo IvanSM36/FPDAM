@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-es">
+
+<link rel="self" type="application/atom+xml" href="http://actividad-web-git-paginaweb.apps.us-east-1.starter.openshift-online.com/index.html/atom.atom" />
+<link rel="alternate" type="text/html" href="http://actividad-web-git-paginaweb.apps.us-east-1.starter.openshift-online.com"/>
+
+<!--Definimos el Canal-->
+
+ <title type="text">Probando ATOM</title> <!--Es el titulo del sitio web de nuestro Canal -->
+
+<id>http://actividad-web-git-paginaweb.apps.us-east-1.starter.openshift-online.com/ </id> <!-- identificador del canal normalmente es la URL-->
+
+<updated>2020-13-1T19:20:46Z</updated> <!--Fecha y hora -->
+
+    <author> <!-- Determina el Autor del enlace.-->
+
+        <name>Ivan Salguero Martin</name>
+        <email>i.salgueromartin@iesrodmarin.com</email>
+
+    </author>
+<!--Fin Definicion del Canal-->
+
+<!--Se definen las secciones que forman el canal-->
+
+<entry>
+
+    <title>El tiempo en Moron de la Frontera con Atom</title> <!-- Es el titulo de la noticia. -->
+
+    <link rel="alternate" type="text/html" href="https://www.eltiempo.es/moron-de-la-frontera.html" /> <!--Enlace de la noticia-->
+
+    <updated>2020-13-1T19:19:46Z</updated> <!--Fecha de la noticia-->
+
+    <id>https://www.eltiempo.es/moron-de-la-frontera.html</id> <!--Identificador de la noticia normalmente es la URL-->
+
+    <author> <!--Nombre del Autor de la noticia.-->
+
+        <name>IvanSM</name>
+
+        <email>i.salgueromartin@iesrodmarin.com</email>
+
+    </author>
+
+<summary>Consulta el tiempo meteorológico de Moron de la Frontera</summary> <!-- Resumen de la noticia.-->
+
+</entry>
+
+<entry>
+
+    <title>Noticias de Moron de la Frontera con Atom</title>
+
+    <link rel="alternate" type="text/html" href="http://www.diariodemoron.com/index.php/moron"/>
+
+    <updated>2020-13-1T19:17:55Z</updated>
+
+    <id>http://www.diariodemoron.com/index.php/moron</id>
+
+<author>
+
+    <name>IvanSM con Atom</name>
+
+    <email>i.salgueromartin@iesrodmarin.com</email>
+
+</author>
+
+    <summary>Noticias de Moron dela Fronteras con Atom</summary>
+
+</entry>
+
+</feed>
