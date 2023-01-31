@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Agregar cliente" Height="500" Width="500">
    
-    <Grid>
+    <Grid Background="#FF96BFBF">
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
             <RowDefinition Height="*"/>
@@ -25,20 +25,20 @@
 
         </Border>
 
-        <Grid Grid.Row="1" Height="300" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid Grid.Row="1" Height="220" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"  > Dar de alta a un cliente</TextBlock>   
+            <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="25"  > Dar de alta a un cliente</TextBlock>   
             <TextBlock Grid.Column="0" Grid.Row="1" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50 0 0 0">DNI:</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="2" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50 0 0 0">Nombre:</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="3" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50 0 0 0">Edad:</TextBlock>
@@ -50,8 +50,8 @@
         </Grid>
 
         <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Height="30" Width="120">Agregar</Button>
-            <Button Height="30" Width="120" Margin="20 0 0 0"> Cancelar </Button>
+            <Button Height="30" Width="120" FontSize="15">Agregar</Button>
+            <Button Height="30" Width="120" FontSize="15" Margin="20 0 0 0"> Cancelar </Button>
 
         </StackPanel>
 
