@@ -31,7 +31,7 @@ namespace WPF_Practica_IvanSM
 
         private void recogeDatos(Object sender, RoutedEventArgs e)
         {
-           txtBoxDni 
+            
         }
 
         private void cerrarVentana(Object sender, RoutedEventArgs e)
