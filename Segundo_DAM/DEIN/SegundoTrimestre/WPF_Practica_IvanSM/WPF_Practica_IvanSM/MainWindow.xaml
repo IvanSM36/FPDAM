@@ -33,9 +33,9 @@
         <Border Grid.Row="2" VerticalAlignment="Bottom" Height="60" Width="450" Background="#99000000" BorderBrush="White" BorderThickness="1 1 1 0" CornerRadius="20 20 0 0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 
-                <Button Height="40" Width="120" FontSize="15" Margin="5">Añadir cliente</Button>
-                <Button Height="40" Width="120" FontSize="15" Margin="5">Buscar</Button>
-                <Button Height="40" Width="120" FontSize="15" Margin="5">Mostrar Todo</Button>
+                <Button Height="35" Width="120" FontSize="15" Margin="5" Click="agregarCliente">Añadir cliente</Button>
+                <Button Height="35" Width="120" FontSize="15" Margin="5">Buscar</Button>
+                <Button Height="35" Width="120" FontSize="15" Margin="5">Mostrar Todo</Button>
 
             </StackPanel>
         </Border>

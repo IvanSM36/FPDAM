@@ -19,9 +19,24 @@ namespace WPF_Practica_IvanSM
     /// </summary>
     public partial class AgregarCliente : Window
     {
+        List<Cliente> clientes= new List<Cliente>();
+        String dni;
+        String nombre;
+        int edad;
+
         public AgregarCliente()
         {
             InitializeComponent();
+        }
+
+        private void recogeDatos(Object sender, RoutedEventArgs e)
+        {
+           txtBoxDni 
+        }
+
+        private void cerrarVentana(Object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
