@@ -9,12 +9,33 @@
 
   <ItemGroup>
     <None Remove="fuente.jpg" />
+    <None Remove="image\agregar.png" />
+    <None Remove="image\facebook.png" />
     <None Remove="image\fuente.jpg" />
+    <None Remove="image\instagram.png" />
+    <None Remove="image\lupa.png" />
+    <None Remove="image\mas.png" />
+    <None Remove="image\mostrar.png" />
+    <None Remove="image\salir.png" />
+    <None Remove="image\tiktok.png" />
+    <None Remove="image\twitter.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\agregar.png" />
+    <Resource Include="image\instagram.png" />
+    <Resource Include="image\lupa.png" />
+    <Resource Include="image\mas.png" />
+    <Resource Include="image\mostrar.png" />
+    <Resource Include="image\tiktok.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="fuente.jpg" />
+    <Resource Include="image\facebook.png" />
     <Resource Include="image\fuente.jpg" />
+    <Resource Include="image\salir.png" />
+    <Resource Include="image\twitter.png" />
   </ItemGroup>
 
 </Project>
